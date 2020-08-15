@@ -3,12 +3,12 @@ const audioElement = document.getElementById("audio");
 
 // toggle button
 function toggleButton() {
-    button.disable= !button.disable;
+    button.disabled = !button.disabled;
 }
 
 
 // passing our jokes to voiceRSS API
-function tellMe (joke){
+function tellMe(joke) {
     VoiceRSS.speech({
         key: '8debc243a28141a1a4c9824f8dd87695',
         src: joke,
@@ -43,5 +43,5 @@ async function getJokes() {
 }
 
 // event listeners
-button.addEventListener("click",getJokes);
-audioElement.addEventListener("ended",toggleButton);
+button.addEventListener("click", getJokes);
+audioElement.addEventListener("ended", toggleButton);

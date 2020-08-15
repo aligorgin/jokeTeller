@@ -49,6 +49,9 @@ button:disabled{
     cursor: default;
     filter: brightness(30%);
 }
+i{
+    background-color: black;
+}
 
 /*media query: tablet or smaller*/
 @media screen and (max-width: 1000px){
